@@ -10,15 +10,22 @@
 void print_diagonal(int n)
 {
 	int a = 0;
+	int b;
 	char dia = '\\';
+	char space = ' ';
 
 	while (a < n)
 	{
-		if (n == 0)
+		while (b < n)
 		{
-			
-		_putchar(dia);
-		_putchar('\n');
-		a++;
+			_putchar(space);
+			b++;
+		}
+		if (b == n)
+		{
+			_putchar(dia);
+			_putchar('\n');
+			a++;
+		}
 	}
 }
