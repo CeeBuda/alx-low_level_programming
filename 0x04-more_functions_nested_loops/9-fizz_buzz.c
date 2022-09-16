@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - checks for miltiples of 3 & 5 
+ * main - checks for miltiples of 3 & 5
  *
  * Return: 0 (Success)
  */
