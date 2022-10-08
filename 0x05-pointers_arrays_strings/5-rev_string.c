@@ -7,7 +7,6 @@
  *
  * Return: void (no return value)
  */
-int _strlen(char *s);
 
 void rev_string(char *s)
 {
@@ -24,7 +23,12 @@ void rev_string(char *s)
 		s[len - i - 1] = temp;
 	}
 }
-
+/**
+ * _strlen - computes the length of a string
+ * @s: pointer to a string
+ *
+ * Return: length of @s
+ */
 int _strlen(char *s)
 {
 	int i, len;
