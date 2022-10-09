@@ -6,34 +6,35 @@
  *
  * Return: void (no return value)
  */
-int _strlen(char *s);
-
 void puts_half(char *str)
 {
-	int n, i;
+	int n;
 
 	n = _strlen(str);
-	i = n / 2;
-	
-	while (str[i] != '\0')
+
+	if (n % 2 == 0)
 	{
-		if (n % 2 == 0)
-		{
-			/*n = n / 2;*/
-			_putchar(str[n / 2]);
-			n++;
-		}
-		else
-		{
-			n = n / 2 + 1;
-			_putchar(str[n]);
-			n++;
-		}
-		i++;
+		n /= 2;
+	}
+	else
+	{
+		n = (n - 1) / 2;
+	}
+
+	while (str[n] != '\0')
+	{
+		_putchar(str[n]);
+		n++;
 	}
 	_putchar('\n');
 }
 
+/**
+ * _strlen - computes the length of a string
+ * @s: pointer to a string
+ *
+ * Return: length of @s
+ */
 int _strlen(char *s)
 {
 	int i, len;
