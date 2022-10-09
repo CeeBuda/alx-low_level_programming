@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * puts_half - prints half of a string
  * @str: string to be halved and printed
@@ -10,15 +10,16 @@ void puts_half(char *str)
 {
 	int n;
 
-	n = _strlen(str);
-
-	if (n % 2 == 0)
+	n = _strlen(str) + 1;
+	
+	printf(" n = %d\n", n);
+	if (n % 2 != 0)
 	{
-		n /= 2;
+		n = (n - 1) / 2;
 	}
 	else
 	{
-		n = (n - 1) / 2;
+		n /= 2;
 	}
 
 	while (str[n] != '\0')
