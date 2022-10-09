@@ -11,7 +11,6 @@ void puts_half(char *str)
 	int n;
 
 	n = _strlen(str) + 1;
-	
 	if (n % 2 != 0)
 	{
 		n = (n - 1) / 2;
