@@ -12,7 +12,6 @@ void puts_half(char *str)
 
 	n = _strlen(str) + 1;
 	
-	printf(" n = %d\n", n);
 	if (n % 2 != 0)
 	{
 		n = (n - 1) / 2;
