@@ -1,14 +1,9 @@
-#include <stdio.h>
-
-/**
- * struct dog - strucure for capturing dog details
- * @name: name of the dog
- * @age: how old is the dog
- * @owner: who owns the dog
- */
+#ifndef DOG_H
+#define DOG_H
 struct dog
 {
 	char *name;
 	char *owner;
 	float age;
 };
+#endif /* DOG_H */
