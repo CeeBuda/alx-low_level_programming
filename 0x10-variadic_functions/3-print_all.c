@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_all - prints anything 
+ * print_all - prints anything
  * @format: type of aregument passed to the funtion
  *
  * Return: void (no return value)
@@ -25,7 +25,7 @@ void print_all(const char * const format, ...)
 		len++;
 		i++;
 	}
-	
+
 	while (j < len)
 	{
 		switch (format[j])
@@ -58,5 +58,6 @@ void print_all(const char * const format, ...)
 		}
 		j++;
 	}
+	va_end(args);
 	printf("\n");
 }
