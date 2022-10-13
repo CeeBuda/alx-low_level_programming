@@ -26,7 +26,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d", j);
 		}
 
-		printf("%d", j);
+		if (separator != NULL)
+		{
+			printf("%d", j);
+		}
 
 		if (i < (n - 1))
 		{
