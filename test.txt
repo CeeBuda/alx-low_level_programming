@@ -1,2 +1,0 @@
-This file is to test if all is in order with my linux system
-more lines underneath.
